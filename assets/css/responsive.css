@@ -1,0 +1,241 @@
+@media only screen and (min-width : 300px) and (max-width : 480px){
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .modal {
+        top: 0;
+    }
+
+    .progress-bg {
+        text-align: left;
+    }
+
+    header img.logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header ul.pull-right {
+        display: block;
+        float: none !important;
+        text-align: center;
+    }
+
+
+    section.main h1 {
+        text-align: center;
+    }
+
+    .ui-widget.ui-widget-content {
+        width: 100%;
+    }
+
+    section.main .amount {
+        position: inherit;
+        margin-top: 45px;
+        top: inherit;
+        display: block;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+
+    section.main .input-holder {
+        display: block;
+    }
+
+    section.main input.input-address {
+        width: 100%;
+    }
+
+    section.main button.submit {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    img.rocket {
+        display: none;
+    }
+
+    .statistics .top .item {
+        padding: 10px 15px;
+    }
+
+    section.features .featured-item, section.about .featured-item {
+        text-align: center;
+    }
+
+    .popup .modal-body .item span.pull-left,
+    .popup .modal-body .item span.pull-right {
+        float: none !important;
+    }
+
+    .popup .modal-body {
+        text-align: center;
+    }
+
+    span.selected-address {
+        font-size: 14px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+
+    .popup .modal-footer button {
+        margin-top: 10px;
+    }
+
+    .modal-footer .btn+.btn {
+        margin-left: 0;
+    }
+
+    .payment .icon {
+        margin-left: 4px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    .terminal-bg {
+        padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .status-bg {
+        margin-top: 15px;
+    }
+
+    .pay-address {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width : 481px) and (max-width: 767px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    section.main h1 {
+        text-align: center;
+    }
+
+    .ui-widget.ui-widget-content {
+        width: 100%;
+    }
+
+    section.main .amount {
+        position: inherit;
+        margin: 0 auto;
+        margin-top: 45px;
+        top: inherit;
+        right: inherit;
+        display: block;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+
+    section.main .input-holder {
+        display: block;
+    }
+
+    section.main input.input-address {
+        width: 100%;
+    }
+
+    section.main button.submit {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    img.rocket {
+        display: none;
+    }
+
+    .statistics .top .item {
+        padding: 10px 15px;
+    }
+
+    section.features .featured-item, section.about .featured-item {
+        text-align: center;
+    }
+
+    .popup .modal-body .item span.pull-left,
+    .popup .modal-body .item span.pull-right {
+        float: none !important;
+    }
+
+    .popup .modal-body {
+        text-align: center;
+    }
+
+    span.selected-address {
+        font-size: 14px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+
+    .popup .modal-footer button {
+        margin-top: 10px;
+    }
+
+    .modal-footer .btn+.btn {
+        margin-left: 0;
+    }
+
+    .payment .icon {
+        margin-left: 4px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    .terminal-bg {
+        padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .status-bg {
+        margin-top: 15px;
+    }
+
+    .pay-address {
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .modal {
+        top: 0;
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header .title {
+        margin-left: 47px;
+    }
+
+}
+
